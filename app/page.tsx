@@ -140,42 +140,34 @@ export default function Resume() {
             </div>
           </section>
           {/* PROJECT SECTION */}
-          <section>
-            <h2 className="text-2xl font-black text-[#2d3748] mb-8 inline-block bg-[#cbd5e0] px-8 py-1 rounded-full tracking-widest uppercase italic">
+          <section className="w-full">
+            <h2 className="text-xl md:text-2xl font-black text-[#2d3748] mb-6 md:mb-8 inline-block bg-[#cbd5e0] px-6 md:px-8 py-1 rounded-full tracking-widest uppercase italic">
               Project
             </h2>
 
-            {/* ปรับความห่างระหว่างการ์ดด้วย space-y-6 */}
-            <div className="pl-2 space-y-6">
+            {/* ปรับความห่างและ Padding ให้ยืดหยุ่นตามหน้าจอ */}
+            <div className="pl-0 md:pl-2 space-y-6">
 
               {/* Project 1 */}
-              <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-md transition-all">
-                <div className="flex justify-between items-start mb-4">
-                  <div>
-                    <div className="flex items-center gap-3 mb-1">
-                      <h3 className="font-black text-[#2d3748] text-lg uppercase leading-tight">
-                        Computer Mathematics
-                        <span className="ml-4 text-[10px] bg-blue-600 text-white px-2 py-0.5 rounded font-bold uppercase tracking-wider inline-block align-middle">
-                          Web App
-                        </span>
-                        <br />
-                        Learning Website
-                      </h3>
-                    </div>
-                  </div>
+              <div className="p-5 md:p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-md transition-all">
+                <div className="flex flex-col sm:flex-row justify-between items-start mb-4 gap-2">
+                  <h3 className="font-black text-[#2d3748] text-base md:text-lg uppercase leading-tight">
+                    Computer Mathematic
+                    <br className="hidden sm:block" />
+                    <span className="block sm:inline">Learning Website</span>
+                  </h3>
+                  <span className="ml-2 md:ml-4 text-[10px] bg-blue-600 text-white px-2 py-0.5 rounded font-bold uppercase tracking-wider inline-block align-middle">
+                      Web App
+                    </span>
                 </div>
-
-                <div className="text-[#4a5568] text-sm leading-relaxed mb-6 space-y-2">
-                  <p>A specialized website for learning computer mathematics, combining core lessons with interactive exercises. Designed to simplify complex topics.
-                  </p>
-
-                </div>
-
+                <p className="text-[#4a5568] text-xs md:text-sm leading-relaxed mb-6">
+                  A specialized website for learning computer mathematics, combining core lessons with interactive exercises. Designed to simplify complex topics.
+                </p>
                 <a
                   href="https://papawadeehong.wixsite.com/projectsstc"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#465166] text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-[#2d3748] transition-colors shadow-sm"
+                  className="inline-flex items-center justify-center gap-2 bg-[#465166] text-white px-5 md:px-6 py-2 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-widest hover:bg-[#2d3748] transition-colors shadow-sm w-full sm:w-auto"
                 >
                   <Globe size={14} />
                   View Project Online
@@ -183,25 +175,20 @@ export default function Resume() {
               </div>
 
               {/* Project 2 */}
-              <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-md transition-all">
-                <div className="flex justify-between items-start mb-4">
-                  <div>
-                    <div className="flex items-center gap-3 mb-1">
-                      <h3 className="font-black text-[#2d3748] text-lg uppercase leading-tight">
-                        BangkokSpaAcademy
-                      </h3>
-                      {/* เพิ่มป้ายประเภท Web App */}
-                      <span className="text-[10px] bg-blue-600 text-white px-2 py-0.5 rounded font-bold uppercase tracking-wider">
-                        Web App
-                      </span>
-                    </div>
-                  </div>
+              <div className="p-5 md:p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-md transition-all">
+                <div className="flex flex-col sm:flex-row justify-between items-start mb-4 gap-2">
+                  <h3 className="font-black text-[#2d3748] text-base md:text-lg uppercase leading-tight">
+                    BangkokSpaAcademy
+                    
+                  </h3>
+                  <span className="ml-2 md:ml-4 text-[10px] bg-blue-600 text-white px-2 py-0.5 rounded font-bold uppercase tracking-wider inline-block align-middle">
+                      Web App
+                    </span>
                 </div>
 
-                <div className="text-[#4a5568] text-sm leading-relaxed space-y-2">
-                  <p>Developed a comprehensive platform for a spa academy. Features an online course catalog and a professional storefront with a clean, calming aesthetic.</p>
-
-                </div>
+                <p className="text-[#4a5568] text-xs md:text-sm leading-relaxed">
+                  Developed a comprehensive platform for a spa academy. Features an online course catalog and a professional storefront with a clean, calming aesthetic.
+                </p>
               </div>
 
             </div>
