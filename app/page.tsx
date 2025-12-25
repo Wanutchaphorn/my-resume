@@ -6,7 +6,7 @@ export default function Resume() {
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-4 flex justify-center font-sans">
       <div className="bg-white w-full max-w-4xl shadow-2xl flex flex-col md:flex-row overflow-hidden rounded-sm">
-        
+
         {/* LEFT COLUMN: SIDEBAR */}
         <aside className="w-full md:w-[35%] bg-[#8b97b0] flex flex-col">
           {/* Profile Section with Darker Background Top */}
@@ -44,21 +44,21 @@ export default function Resume() {
               <span className="text-sm font-medium">Samutsongkharm, Thailand</span>
             </div>
 
-            
+
           </div>
         </aside>
 
         {/* RIGHT COLUMN: MAIN CONTENT */}
         <main className="flex-1 p-12 bg-white flex flex-col gap-12">
-          
+
           {/* ABOUT ME */}
           <section>
             <h2 className="text-2xl font-black text-[#2d3748] mb-6 inline-block bg-[#cbd5e0] px-8 py-1 rounded-full tracking-widest uppercase italic">
               About Me
             </h2>
             <p className="text-[#4a5568] text-sm leading-relaxed text-justify pl-2">
-              I enjoy technology and using digital tools to make work easier and more efficient. 
-              I like communicating and working with people, and I enjoy supporting executives in daily tasks. 
+              I enjoy technology and using digital tools to make work easier and more efficient.
+              I like communicating and working with people, and I enjoy supporting executives in daily tasks.
               I am a fast learner, well organized, and always open to learning new technologies.
             </p>
           </section>
@@ -77,7 +77,46 @@ export default function Resume() {
               ))}
             </div>
           </section>
+          {/* EDUCATION (แบ่งระดับแบบโค้ดก่อนแก้ไข + ดีไซน์ใหม่) */}
+          <section>
+            <h2 className="text-2xl font-black text-[#2d3748] mb-8 inline-block bg-[#cbd5e0] px-8 py-1 rounded-full tracking-widest uppercase italic">
+              Education
+            </h2>
+            <div className="space-y-8 pl-2">
+              {/* University */}
+              <div className="relative pl-8 border-l-2 border-indigo-200">
+                <div className="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[7px] top-1 shadow-[0_0_0_4px_rgba(99,102,241,0.1)]"></div>
+                <div className="flex justify-between items-start">
+                  <h3 className="font-black text-[#2d3748] text-lg uppercase leading-tight">University (Present)</h3>
 
+                </div>
+                <p className="text-indigo-700 font-bold text-sm">Rajamangala University of Technology Thanyaburi</p>
+                <p className="text-xs text-gray-500 font-medium italic">Major in Computer Engineering</p>
+              </div>
+
+              {/* High Vocational */}
+              <div className="relative pl-8 border-l-2 border-indigo-200">
+                <div className="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[7px] top-1 shadow-[0_0_0_4px_rgba(99,102,241,0.1)]"></div>
+                <div className="flex justify-between items-start">
+                  <h3 className="font-black text-[#2d3748] text-lg uppercase leading-tight">High Vocational Certificate</h3>
+
+                </div>
+                <p className="text-indigo-700 font-bold text-sm">Samutsongkharm Technical College</p>
+                <p className="text-xs text-gray-500 font-medium italic">Major in Software Developers</p>
+              </div>
+
+              {/* Vocational */}
+              <div className="relative pl-8 border-l-2 border-indigo-200">
+                <div className="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[7px] top-1 shadow-[0_0_0_4px_rgba(99,102,241,0.1)]"></div>
+                <div className="flex justify-between items-start">
+                  <h3 className="font-black text-[#2d3748] text-lg uppercase leading-tight">Vocational Certificate</h3>
+
+                </div>
+                <p className="text-indigo-700 font-bold text-sm">Samutsongkharm Technical College</p>
+                <p className="text-xs text-gray-500 font-medium italic">Major in Information Technology</p>
+              </div>
+            </div>
+          </section>
           {/* EXPERIENCES (Timeline Style) */}
           <section>
             <h2 className="text-2xl font-black text-[#2d3748] mb-8 inline-block bg-[#cbd5e0] px-8 py-1 rounded-full tracking-widest uppercase italic">
@@ -87,61 +126,86 @@ export default function Resume() {
               {[
                 { company: "Bangkok Web Solution", role: "Frontend Developer", },
                 { company: "Somdetphraphutthaloetla Hospital", role: "IT Support", },
-                { company: "Community Development Office", role: "Communication and Coordination",},
+                { company: "Community Development Office", role: "Communication and Coordination", },
               ].map((item, idx) => (
                 <div key={idx} className="relative pl-10 border-l-2 border-[#2d3748]">
                   <div className="absolute -left-[11px] top-0 bg-[#2d3748] w-5 h-5 flex items-center justify-center transform rotate-45">
-                     <div className="w-2 h-2 bg-white"></div>
+                    <div className="w-2 h-2 bg-white"></div>
                   </div>
                   <h3 className="font-black text-lg text-[#2d3748] uppercase leading-none">{item.company} <span className="text-sm font-normal ml-2 tracking-normal capitalize text-gray-500"></span></h3>
                   <p className="text-blue-600 text-xs font-bold mt-1 uppercase tracking-widest">{item.role}</p>
-                  
+
                 </div>
               ))}
             </div>
           </section>
+          {/* PROJECT SECTION */}
+          <section>
+            <h2 className="text-2xl font-black text-[#2d3748] mb-8 inline-block bg-[#cbd5e0] px-8 py-1 rounded-full tracking-widest uppercase italic">
+              Project
+            </h2>
 
-          {/* EDUCATION (แบ่งระดับแบบโค้ดก่อนแก้ไข + ดีไซน์ใหม่) */}
-  <section>
-    <h2 className="text-2xl font-black text-[#2d3748] mb-8 inline-block bg-[#cbd5e0] px-8 py-1 rounded-full tracking-widest uppercase italic">
-      Education
-    </h2>
-    <div className="space-y-8 pl-2">
-      {/* University */}
-      <div className="relative pl-8 border-l-2 border-indigo-200">
-        <div className="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[7px] top-1 shadow-[0_0_0_4px_rgba(99,102,241,0.1)]"></div>
-        <div className="flex justify-between items-start">
-          <h3 className="font-black text-[#2d3748] text-lg uppercase leading-tight">University (Present)</h3>
-          
-        </div>
-        <p className="text-indigo-700 font-bold text-sm">Rajamangala University of Technology Thanyaburi</p>
-        <p className="text-xs text-gray-500 font-medium italic">Major in Computer Engineering</p>
-      </div>
+            {/* ปรับความห่างระหว่างการ์ดด้วย space-y-6 */}
+            <div className="pl-2 space-y-6">
 
-      {/* High Vocational */}
-      <div className="relative pl-8 border-l-2 border-indigo-200">
-        <div className="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[7px] top-1 shadow-[0_0_0_4px_rgba(99,102,241,0.1)]"></div>
-        <div className="flex justify-between items-start">
-          <h3 className="font-black text-[#2d3748] text-lg uppercase leading-tight">High Vocational Certificate</h3>
-          
-        </div>
-        <p className="text-indigo-700 font-bold text-sm">Samutsongkharm Technical College</p>
-        <p className="text-xs text-gray-500 font-medium italic">Major in Software Developers</p>
-      </div>
+              {/* Project 1 */}
+              <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-md transition-all">
+                <div className="flex justify-between items-start mb-4">
+                  <div>
+                    <div className="flex items-center gap-3 mb-1">
+                      <h3 className="font-black text-[#2d3748] text-lg uppercase leading-tight">
+                        Computer Mathematics
+                        <span className="ml-4 text-[10px] bg-blue-600 text-white px-2 py-0.5 rounded font-bold uppercase tracking-wider inline-block align-middle">
+                          Web App
+                        </span>
+                        <br />
+                        Learning Website
+                      </h3>
+                    </div>
+                  </div>
+                </div>
 
-      {/* Vocational */}
-      <div className="relative pl-8 border-l-2 border-indigo-200">
-        <div className="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[7px] top-1 shadow-[0_0_0_4px_rgba(99,102,241,0.1)]"></div>
-        <div className="flex justify-between items-start">
-          <h3 className="font-black text-[#2d3748] text-lg uppercase leading-tight">Vocational Certificate</h3>
-         
-        </div>
-        <p className="text-indigo-700 font-bold text-sm">Samutsongkharm Technical College</p>
-        <p className="text-xs text-gray-500 font-medium italic">Major in Information Technology</p>
-      </div>
-    </div>
-  </section>
+                <div className="text-[#4a5568] text-sm leading-relaxed mb-6 space-y-2">
+                  <p>A specialized website for learning computer mathematics, combining core lessons with interactive exercises. Designed to simplify complex topics.
+                  </p>
 
+                </div>
+
+                <a
+                  href="https://papawadeehong.wixsite.com/projectsstc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#465166] text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-[#2d3748] transition-colors shadow-sm"
+                >
+                  <Globe size={14} />
+                  View Project Online
+                </a>
+              </div>
+
+              {/* Project 2 */}
+              <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-md transition-all">
+                <div className="flex justify-between items-start mb-4">
+                  <div>
+                    <div className="flex items-center gap-3 mb-1">
+                      <h3 className="font-black text-[#2d3748] text-lg uppercase leading-tight">
+                        BangkokSpaAcademy
+                      </h3>
+                      {/* เพิ่มป้ายประเภท Web App */}
+                      <span className="text-[10px] bg-blue-600 text-white px-2 py-0.5 rounded font-bold uppercase tracking-wider">
+                        Web App
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="text-[#4a5568] text-sm leading-relaxed space-y-2">
+                  <p>Developed a comprehensive platform for a spa academy. Features an online course catalog and a professional storefront with a clean, calming aesthetic.</p>
+
+                </div>
+              </div>
+
+            </div>
+          </section>
         </main>
       </div>
     </div>
