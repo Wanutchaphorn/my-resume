@@ -56,7 +56,7 @@ export default function Resume() {
             <h2 className="text-2xl font-black text-[#2d3748] mb-6 inline-block bg-[#cbd5e0] px-8 py-1 rounded-full tracking-widest uppercase italic">
               About Me
             </h2>
-            <p className="text-[#4a5568] text-sm leading-relaxed text-justify pl-2">
+            <p className="text-[#4a5568] text-sm leading-normal text-justify pl-2 tracking-tighter">
               I enjoy technology and using digital tools to make work easier and more efficient.
               I like communicating and working with people, and I enjoy supporting executives in daily tasks.
               I am a fast learner, well organized, and always open to learning new technologies.
