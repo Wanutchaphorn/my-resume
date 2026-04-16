@@ -156,7 +156,7 @@ export default function Home() {
                   { name: 'miro', icon: '/miro-2.svg' },
                   { name: 'Microsoft Office', icon: 'https://www.vectorlogo.zone/logos/microsoft/microsoft-icon.svg' },
                   { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
-                  { name: 'Antigravity', icon: '/antigravity.png' },
+                  { name: 'Antigravity', icon: '/Antigravity.png' },
                 ]
               }
             ].map((group) => (
