@@ -1,6 +1,7 @@
+import type { ReactNode } from 'react';
 import { Phone, Mail, Globe, MapPin, Star } from 'lucide-react';
 
-export default function Resume() {
+export default function Resume(): ReactNode {
   const skills = ['HTML/CSS', 'PHP', 'JAVA', 'Python', 'SQl'];
 
   return (
