@@ -156,7 +156,7 @@ export default function Home() {
                   { name: 'miro', icon: '/miro-2.svg' },
                   { name: 'Microsoft Office', icon: 'https://www.vectorlogo.zone/logos/microsoft/microsoft-icon.svg' },
                   { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
-                  { name: 'Antigravity', icon: '/Antigravity.png' },
+                  { name: 'Antigravity', icon: '/antigravity.png' },
                 ]
               }
             ].map((group) => (
@@ -281,12 +281,12 @@ export default function Home() {
             <div className="flex justify-center">
               {[
                 {
-                  title: 'SYSTEM ARCHITECTURE & FLOW DESIGN',
-                  tags: ['Diagram', 'Infrastructure', 'Documentation'],
+                  title: 'SYSTEM ARCHITECTURE & DESIGN DIAGRAMS',
+                  tags: ['Activity Diagram', 'Use Case Diagram', 'ER Diagram'],
                   description: [
-                    'Designing high-level system architectures and component interactions.',
-                    'Visualizing user journeys and process workflows to improve UX.',
-                    'Creating detailed technical documentation for development teams.'
+                    'ER Diagram',
+                    'Activity Diagram',
+                    'Use Case Diagram'
                   ],
                   link: '/diagrams',
                   image: '/ER.jpg'
@@ -442,7 +442,7 @@ export default function Home() {
                 {[
                   { icon: Mail, label: 'Email', value: 'fah.thongkham@gmail.com', link: 'mailto:fah.thongkham@gmail.com' },
                   { icon: Phone, label: 'Tel', value: '0918716674', link: 'tel:0918716674' },
-                  { icon: MessageSquare, label: 'Line ID', value: 'fah0918716674', link: 'https://line.me/ti/p/w74kaLMFO4' }
+                  { icon: MessageSquare, label: 'Line ID', value: 'fah0918716674', link: 'https://line.me/ti/p/w74kaLMFO' }
                 ].map((item, i) => (
                   <a key={i} href={item.link} className="flex items-center gap-4 group">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-slate-900 shadow-sm transition group-hover:bg-slate-950 group-hover:text-white">
