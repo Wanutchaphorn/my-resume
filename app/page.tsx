@@ -217,8 +217,10 @@ export default function Home() {
                 title: 'Massage course and spa product management system (Excellent Project Award)',
                 tags: ['PHP', 'MySQL', 'JavaScript', 'CSS'],
                 description: [
-                  'Developed a Full-stack Spa System (PHP/MySQL) integrating booking, inventory, and POS.',
-                  'Automated Email Notifications to streamline booking confirmations and user communication.'
+                  'Gathered and analyzed business requirements from clients/company stakeholders, while proposing additional improvements to enhance system completeness and usability.',
+                  'Prioritized and organized requirements based on development workflow and implementation sequence to ensure efficient project execution.',
+                  'Designed workflows and created system diagrams to clearly communicate system processes and requirements.',
+                  'Coordinated with the development team by delivering requirements and diagrams for feasibility analysis, effort estimation, and system development planning.'
                 ],
                 link: '/massage-course',
                 image: '/bannerspa.jpg'
